@@ -16,7 +16,10 @@
         display: grid;
         /*grid-template-columns: 30% 40% 30%;*/
         /*grid-template-columns: 1fr 2fr 1fr;*/
-        /*grid-template-columns: repeat(9,1fr)*/
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(10, minimax(200px, auto));
+        grid-column-gap: 10px; /*ustawia odstępy między kolumnami*/
+        grid-row-gap: 10px; /*ustawia odstępy między wierszami*/
         max-width: 960px;
         margin: 0 auto;
     }  
